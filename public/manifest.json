@@ -1,0 +1,24 @@
+{
+  "name": "SIWIRA - Pasar Digital HMSI",
+  "short_name": "SIWIRA",
+  "description": "Marketplace digital mahasiswa Sistem Informasi - HMSI Universitas Nusa Putra",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f5f5f5",
+  "theme_color": "#2AB8C6",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/logo_siwira.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/logo_siwira.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
