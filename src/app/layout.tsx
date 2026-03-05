@@ -16,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://siwira.vercel.app"),
   title: "SIWIRA - Pasar Digital HMSI",
   description:
     "Marketplace digital mahasiswa Sistem Informasi - HMSI Universitas Nusa Putra. Temukan dan jual produk UMKM terbaik!",
@@ -24,6 +25,21 @@ export const metadata: Metadata = {
     capable: true,
     statusBarStyle: "default",
     title: "SIWIRA",
+  },
+  openGraph: {
+    title: "SIWIRA - Pasar Digital HMSI",
+    description:
+      "Marketplace digital mahasiswa Sistem Informasi - HMSI Universitas Nusa Putra. Temukan dan jual produk UMKM terbaik!",
+    url: "https://siwira.vercel.app",
+    siteName: "SIWIRA",
+    locale: "id_ID",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SIWIRA - Pasar Digital HMSI",
+    description:
+      "Marketplace digital mahasiswa Sistem Informasi - HMSI Universitas Nusa Putra.",
   },
 };
 
