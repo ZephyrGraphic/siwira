@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import AuthProvider from "@/components/AuthProvider";
@@ -20,12 +20,19 @@ export const metadata: Metadata = {
   description:
     "Marketplace digital mahasiswa Sistem Informasi - HMSI Universitas Nusa Putra. Temukan dan jual produk UMKM terbaik!",
   manifest: "/manifest.json",
-  themeColor: "#2AB8C6",
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
     title: "SIWIRA",
   },
+};
+
+export const viewport: Viewport = {
+  themeColor: "#2AB8C6",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
@@ -37,10 +44,6 @@ export default function RootLayout({
     <html lang="id" suppressHydrationWarning>
       <head>
         <link rel="apple-touch-icon" href="/logo_siwira.png" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
