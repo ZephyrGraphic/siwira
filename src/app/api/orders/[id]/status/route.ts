@@ -6,7 +6,7 @@ import { prisma } from "@/lib/prisma";
 // PUT /api/orders/[id]/status — Update order status (seller confirms/completes)
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: { params: Promise<{ id: string }> },
 ) {
   const session = await getServerSession(authOptions);
   if (!session?.user) {

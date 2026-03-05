@@ -6,7 +6,7 @@ import { prisma } from "@/lib/prisma";
 // DELETE: Hapus produk (Hanya Pemilik atau Admin)
 export async function DELETE(
   req: NextRequest,
-  { params }: { params: { id: string } },
+  { params }: { params: Promise<{ id: string }> },
 ) {
   try {
     const session = await getServerSession(authOptions);
@@ -15,7 +15,7 @@ export async function DELETE(
     }
 
     const user = session.user as any;
-    const productId = params.id;
+    const { id: productId } = await params;
 
     // Cari produk
     const product = await prisma.product.findUnique({

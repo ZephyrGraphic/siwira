@@ -53,8 +53,8 @@ Pastikan Anda sudah menginstal **Node.js** (v18+) dan **PostgreSQL** di mesin lo
 1. **Clone repositori ini**
 
    ```bash
-   git clone https://github.com/username-anda/siwira-hmsi-umkm.git
-   cd siwira-hmsi-umkm
+   git clone https://github.com/ZephyrGraphic/siwira.git
+   cd siwira
    ```
 
 2. **Instal seluruh depedensi**
